@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>About Me | Art by Vonnie</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/secondary.css" />
+  <link rel="stylesheet" href="css/navsecondary.css" />
+ </head>
+ <body>
+     <header>
+     <a href="template.html"><img class="logo" src="images/logo.jpg" alt="Art by Vonnie Logo"></a> 
+     <div class="container">
+      <div id="inner">
+        <h1>About Me</h1>
+      </div>
+     </div>
+     <nav class="topnav" id="myTopnav">
+       <a href="galleries1and2.html">Gallery One</a>
+       <a href="galleries3and4.html">Gallery Two</a>
+       <a href="galleries5and6.html">Gallery Three</a>
+       <a href="bio.html" class="active">About Me</a>
+       <a href="contact.php">Contact</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+       <h2 class="subheader">Vonnie Gaither</h2>
+       <div class="portrait">
+       <img src="images/vonnie.jpg" alt="Photo of Vonnie Gaither">
+      </div>
+       <div class="bio">
+        <p>Art has been my passion for as long as I can remember, painting on anything from canvas to toilet paper. I often give an initial impression of being quiet, almost shy.  Then I may flash  a smile with eyes sparkling with energy.  I am an intense, dynamic, but unassuming personality.  Not seeking to draw attention to myself, I like to stand to one side and listen to the myriad comments, emotions, and interpretations that my works invariably stimulate.  I like to just fade into the wall and hear what people say about a piece.  Sometimes it really surprises me.  Often someone will see something in it that I didn’t see or pick up a different emotion from what I was feeling at the time of its creation.</p>  
+        <p>While tempera paint was my first medium of choice.  I now use an assortment of acrylic and latex paints. My art is constantly changing.  What matters to me is that my art is enjoyed.  To know my art is to know me.  It is through my art that I find peace.</p>  
+      </div>
+
+     <footer>
+      <p><small>&copy; 2021 Art by Vonnie. Website created by Shelby Holmes. ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Check CSS</a></small> ~ 
+          <a id="disclaimer" href="disclaimer.html">Disclaimer</a>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

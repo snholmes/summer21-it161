@@ -1,0 +1,51 @@
+/* Global rules */
+.topnav {
+    margin: auto;
+    overflow: hidden;
+    padding: 0em 1em;
+}
+
+.topnav a {
+    display: block;
+    color: whitesmoke;
+    width: fit-content;
+    text-align: center;
+    padding: 12px 15px;
+    margin: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+
+a:hover {
+    color: rgb(175, 22, 2);
+}
+
+/* Responsive rules - apply when screen width is less than 1200px */
+
+@media screen and (max-width: 1199px) {
+    
+    .topnav {
+        display: block;
+    }
+    
+
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .topnav.responsive {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,266 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
+
+html {
+    background-color: lightgray;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: white; 
+    background: black;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    height: 5em;
+    border: 2px solid black;
+    background-color: white;
+}
+
+img.logo {
+    height: auto;
+    max-height: 100%;
+    width: 10%;
+    float: left;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.portrait img {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.bio {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 1em;
+    text-align: justify;
+}
+
+.contactform {
+    border: 1px solid black;
+    background-color: lightsteelblue;
+    width: fit-content;
+    margin: auto;
+    padding: 1em;
+}
+
+#ctform {
+    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+    float: left;
+}
+
+#contactinfo {
+    float: right;
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.cfsection, #section {
+    width: fit-content;
+    margin: auto;
+}
+
+div.container {
+    margin: auto;
+    background: white;
+    float: left;
+    width: 35%;
+    box-sizing: border-box;
+    height: 100%;   
+}
+
+.portrait {
+    width: 50%;
+    float: left;
+}
+
+#inner {
+    height: 100%;
+    padding: 0.85rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 1.5rem;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+div.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+img.gallery {
+    width: 300px;
+    float: left;
+    padding: 0.5em;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+td p {
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+    margin-left: 1em;
+    margin-top: 3em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.hscroll {
+    overflow-x: auto;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+#disclaimer {
+    font-size: smaller;
+}
+
+#html-checker, #css-checker, #disclaimer {
+    color: gold;
+    text-decoration: none;
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+    background-color: transparent;
+}
+
+#html-checker:hover, #css-checker:hover, #disclaimer:hover {
+    text-decoration: none;
+    color: rgb(175, 22, 2);
+}
+
+/* Responsive rules */
+
+@media all and (max-width: 1199px) {
+    div.container {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 899px) {
+    #ctform {
+        float: none;
+        width: 100%;
+    }
+    #contactinfo {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    #contactinfo h3, p {
+        text-align: center;
+    }
+    .portrait, .bio {
+        float: none;
+        margin: auto;
+    }
+    .bio {
+        width: 100%;
+    }
+    .portrait {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    img.logo {
+       width: 20%;
+       padding: 1rem 0.2rem;
+    }
+}
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    #inner {
+        padding-right: 3rem;
+    }
+    
+    p {
+        margin: 1em;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    img.logo {
+        padding-top: 1rem;
+    }
+    
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    #inner {
+    padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        margin-top: 1.5em;
+    }
+}
